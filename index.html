@@ -2,23 +2,25 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles/root.css">
+        <script type="text/javascript" src="scripts/root.js"></script>
         <meta charset="UTF-8">
         <title>Brodie's Blog</title>
     </head>
     <body class="flex-container flex-column">
         <nav>
-            <a class="button" href="index.html">Home</a>
-            <a class="button" href="contact.html">Contact Me</a>
-            <a class="button" href="about.html">About Me</a>
-            <a class="button" href="library.html">Library</a>
+            <a class="nav-button" href="index.html">Home</a>
+            <a class="nav-button" href="blog/rolling.html">Rolling Blog</a>
+            <a class="nav-button" href="blog/index.html">Blog Index</a>
+            <a class="nav-button" href="about.html">About Me</a>
+            <a class="nav-button" href="library.html">Library</a>
+            <a class="nav-button" href="contact.html">Contact Me</a>
         </nav>
-
         <header>
             <h1>Brodie's Blog</h1>
         </header>
 
         <div class="content flex-container flex-row flex-justify-center">
-            <main>
+            <main class="animate-scale">
                 <div>
                     <h2>Welcome</h2>
 
@@ -30,8 +32,6 @@
 
                 <div>
                     <h2>Recent Blog Posts</h2>
-
-                    <a href="blog/rolling.html">Rolling Blog Page</a> - <a href="blog/index.html">Full browsable blog index</a>
                     <ul>
                         <li>1 July 2019 - <a href="blog/post1.html">This is an example</a></li>
                         <li>1 July 2019 - <a href="blog/post2.html">This is another example</a></li>
@@ -51,7 +51,7 @@
 
             </main>
 
-            <aside>
+            <aside class="animate-scale">
                 <h2>Interesting Links</h2>
                 <div>
                     <h3>Content</h3>

@@ -2,26 +2,33 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles/root.css">
+        <link rel="stylesheet" href="styles/contact.css">
+        <script type="text/javascript" src="scripts/root.js"></script>
         <meta charset="UTF-8">
         <title>Brodie's Blog - Contact Me</title>
     </head>
     <body class="flex-container flex-column">
         <nav>
-            <a class="button" href="index.html">Home</a>
-            <a class="button" href="contact.html">Contact Me</a>
-            <a class="button" href="about.html">About Me</a>
-            <a class="button" href="library.html">Library</a>
+            <a class="nav-button" href="index.html">Home</a>
+            <a class="nav-button" href="blog/rolling.html">Rolling Blog</a>
+            <a class="nav-button" href="blog/index.html">Blog Index</a>
+            <a class="nav-button" href="about.html">About Me</a>
+            <a class="nav-button" href="library.html">Library</a>
+            <a class="nav-button" href="contact.html">Contact Me</a>
         </nav>
         <header>
             <h1>Contact Me</h1>
         </header>
         <div class="flex-container flex-center flex-column">
-            <section>
+            <section class="animate-scale">
+                <h2>Guidelines</h2>
                 <p>
-                    I have 3 ways to contact me listed below, 2 ways if you're going to be pedantic about since the first is just a form to email me
+                    <ul>
+                        <li>If you some reason you happen to be using one of my repositories please direct any questions or concerns to the relevant repository on GitHub</li>
+                    </ul>
                 </p>
             </section>
-            <section>
+            <section class="animate-scale">
                 <h2>Contact Form</h2>
                 <form action="">
                     <label for="name">Name:</label>
@@ -44,18 +51,22 @@
                     <button type="reset">Clear Email</button>
                 </form>
             </section>
-            <section>
+            <section class="animate-scale">
                 <h2>Email</h2>
                 <p>
                     I check my emails a few times a day and I'm fairly quick to respond once I do see the email so this is my preferred mode of contact, if for some reason the form above is not working then my email is <a href="mailto:brodie@brodierobertson.xyz">brodie@brodierobertson.xyz</a> which should work unless my email server happens to be down.
                 </p>
             </section>
-            <section>
+            <section class="animate-scale">
                 <h2>LinkedIn</h2>
                 <p>
                     If email is not your thing, then feel free to contact me on LinkedIn, I don't know how long I'll take to respond since the only messages I ever get on LinkedIn are from the company trying to sell me premium or some other junk that I have no interest in. But if you really can't handle the thought of emailing me then here's my <a href="https://www.linkedin.com/in/brodie-robertson-888046149/">LinkedIn account</a>.
 
                 </p>
+            </section>
+            <section class="animate-scale">
+                <h2>Note</h2>
+                <p>Sometimes my domain may get marked as spam by some email services. If this is occurring then the easiest solution is to whitelist my domain. If you're hosting your own email server then you can search the internet for how to do this but if you're using something like Gmail this can be done by adding my email as a contact and I presume the same is true for other email services.</p>
             </section>
         </div>
         <footer>

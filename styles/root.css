@@ -4,46 +4,13 @@
     --paper-border-color: rgb(120, 120, 120);
     --paper-bg: white;
     --paper-shadow-color: gray;
+    --paper-shadow: 0 6px 6px -4px var(--paper-shadow-color);
+    --scale-animate-time: 0.5s;
+    --scale-animate-scale: scale(1.05);
     --nav-link-color: white;
     --small-spacing: 1em;
     --med-spacing: 2em;
-}
-
-html, body {
-    height: 100%;
-}
-
-body {
-    background-color: var(--bg);
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-main, aside, section, article {
-    background-color: var(--paper-bg);
-    padding-left: var(--small-spacing);
-    padding-right: var(--small-spacing);
-    margin: var(--med-spacing);
-    margin-top: 0px;
-    border-style: solid;
-    border-color: var(--paper-border-color);
-    border-width: 1px;
-    box-shadow: 0 6px 6px -4px var(--paper-shadow-color);
-}
-
-main, section, article {
-    width: 1000px;
-}
-
-header {
-    margin-left: var(--med-spacing);
-}
-
-footer {
-    margin-top: auto;
-    margin-bottom: var(--small-spacing);
-    text-align: center;
-    flex-shrink: 0;
+    --link-color: blue;
 }
 
 .flex-container {
@@ -71,6 +38,76 @@ footer {
     flex-direction: row;
 }
 
+.nav-button {
+  font: bold 14px;
+  text-decoration: none;
+  background-color: var(--nav-bg);
+  color: var(--nav-link-color);
+  padding: 2px 6px 2px 6px;
+}
+
+.animate-scale {
+    -moz-transition: var(--scale-animate-time);
+    -ms-transition: var(--scale-animate-time);
+    -o-transition: var(--scale-animate-time);
+    -webkit-transition: var(--scale-animate-time);
+    transition: var(--scale-animate-time);
+}
+
+.animate-scale:hover {
+    -moz-transform: var(--scale-animate-scale);
+    -ms-transform: var(--scale-animate-scale);
+    -o-transform: var(--scale-animate-scale);
+    -webkit-transform: var(--scale-animate-scale);
+    transform: var(--scale-animate-scale);
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--bg);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main, aside, section, article {
+    background-color: var(--paper-bg);
+    padding-left: var(--small-spacing);
+    padding-right: var(--small-spacing);
+    margin: var(--med-spacing);
+    margin-top: 0px;
+    border-style: solid;
+    border-color: var(--paper-border-color);
+    border-width: 1px;
+    box-shadow: var(--paper-shadow);
+}
+
+main, section, article {
+    width: 1000px;
+}
+
+header {
+    margin-left: var(--med-spacing);
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: var(--small-spacing);
+    text-align: center;
+    flex-shrink: 0;
+}
+
+a:link {
+    text-decoration: none
+}
+
+a:link:not(.nav-button), a:visited:not(.nav-button) {
+    color: var(--link-color);
+}
+
 nav {
     display: flex;
     background-color: var(--nav-bg)
@@ -78,14 +115,6 @@ nav {
 
 nav > a {
     margin: var(--small-spacing);
-}
-
-.button {
-  font: bold 14px;
-  text-decoration: none;
-  background-color: var(--nav-bg);
-  color: var(--nav-link-color);
-  padding: 2px 6px 2px 6px;
 }
 
 aside > div > ul {
