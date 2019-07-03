@@ -1,0 +1,95 @@
+:root {
+    --bg: rgb(245, 245, 245);
+    --nav-bg: rgb(40, 62, 75);
+    --paper-border-color: rgb(120, 120, 120);
+    --paper-bg: white;
+    --paper-shadow-color: gray;
+    --nav-link-color: white;
+    --small-spacing: 1em;
+    --med-spacing: 2em;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--bg);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main, aside, section, article {
+    background-color: var(--paper-bg);
+    padding-left: var(--small-spacing);
+    padding-right: var(--small-spacing);
+    margin: var(--med-spacing);
+    margin-top: 0px;
+    border-style: solid;
+    border-color: var(--paper-border-color);
+    border-width: 1px;
+    box-shadow: 0 6px 6px -4px var(--paper-shadow-color);
+}
+
+main, section, article {
+    width: 1000px;
+}
+
+header {
+    margin-left: var(--med-spacing);
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: var(--small-spacing);
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-align-center {
+    align-items: center
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    background-color: var(--nav-bg)
+}
+
+nav > a {
+    margin: var(--small-spacing);
+}
+
+.button {
+  font: bold 14px;
+  text-decoration: none;
+  background-color: var(--nav-bg);
+  color: var(--nav-link-color);
+  padding: 2px 6px 2px 6px;
+}
+
+aside > div > ul {
+    list-style: none;
+    padding-left: var(--small-spacing);
+}
+

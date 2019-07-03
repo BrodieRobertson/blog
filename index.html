@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="styles/root.css">
         <meta charset="UTF-8">
         <title>Brodie's Blog</title>
     </head>
-    <body>
+    <body class="flex-container flex-column">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact Me</a>
-            <a href="about.html">About Me</a>
-            <a href="library.html">Library</a>
+            <a class="button" href="index.html">Home</a>
+            <a class="button" href="contact.html">Contact Me</a>
+            <a class="button" href="about.html">About Me</a>
+            <a class="button" href="library.html">Library</a>
         </nav>
 
         <header>
             <h1>Brodie's Blog</h1>
         </header>
 
-        <main>
-            <div>
-                <h2>Welcome</h2>
+        <div class="content flex-container flex-row flex-justify-center">
+            <main>
+                <div>
+                    <h2>Welcome</h2>
 
-                My name is Brodie Robertson, I'm known for being:
-                <ul>
-                    <li>A 3rd year Software Engineering student at the University of South Australia</li>
-                </ul>
-            </div>
+                    My name is Brodie Robertson, I'm known for being:
+                    <ul>
+                        <li>A 3rd year Software Engineering student at the University of South Australia</li>
+                    </ul>
+                </div>
 
-            <div>
-                <h2>Recent Blog Posts</h2>
+                <div>
+                    <h2>Recent Blog Posts</h2>
 
-                <a href="blog/rolling.html">Rolling Blog Page</a> - <a href="blog/index.html">Full browsable blog index</a>
-                <ul>
-                    <li>1 July 2019 - <a href="blog/post1.html">This is an example</a></li>
-                    <li>1 July 2019 - <a href="blog/post2.html">This is another example</a></li>
-                </ul>
-            </div>
+                    <a href="blog/rolling.html">Rolling Blog Page</a> - <a href="blog/index.html">Full browsable blog index</a>
+                    <ul>
+                        <li>1 July 2019 - <a href="blog/post1.html">This is an example</a></li>
+                        <li>1 July 2019 - <a href="blog/post2.html">This is another example</a></li>
+                    </ul>
+                </div>
 
-            <div>
-                <h2>Misc</h2>
+                <div>
+                    <h2>Misc</h2>
 
-                <ul>
-                    <li>The <a href="/programs">programs and tools</a> I use on a daily basis</li>
-                    <li>My <a href="https://github.com/BrodieRobertson/dotfiles">dotfiles/config files</a> the I use on my personal rig</li>
-                    <li>The <a href="https://github.com/BrodieRobertson/blog-management-system">shell blog management system</a> that I use to generate my blog posts</li>
-                </ul>
+                    <ul>
+                        <li>The <a href="/programs">programs and tools</a> I use on a daily basis</li>
+                        <li>My <a href="https://github.com/BrodieRobertson/dotfiles">dotfiles/config files</a> the I use on my personal rig</li>
+                        <li>The <a href="https://github.com/BrodieRobertson/blog-management-system">shell blog management system</a> that I use to generate my blog posts</li>
+                    </ul>
 
-            </div>
+                </div>
 
-        </main>
+            </main>
 
+            <aside>
+                <h2>Interesting Links</h2>
+                <div>
+                    <h3>Content</h3>
+                    <ul>
+                        <li><a href="portfolio">Portfolio</a></li>
+                        <li><a href="https://github.com/BrodieRobertson">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/brodie-robertson-888046149/">LinkedIn</a></li>
+                    </ul>
+                </div>
 
-        <aside>
-            <h2>Links</h2>
-
-            <ul>
-                <li>Content</li>
-                <ul>
-                    <li><a href="portfolio">Portfolio</a></li>
-                    <li><a href="https://github.com/BrodieRobertson">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/brodie-robertson-888046149/">Linked in</a></li>
-                </ul>
-                <li>Personal</li>
-                <ul>
-                    <li><a href="contact.html">Contact Me</a></li>
-                    <li><a href="blog/rolling.html">Blog</a></li>
-                    <li><a href="library.html">Library</a></li>
-                </ul>
-            </ul>
-
-        </aside>
+                <div>
+                    <h3>Personal</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Me</a></li>
+                        <li><a href="blog/rolling.html">Blog</a></li>
+                        <li><a href="library.html">Library</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
 
         <footer>
             This is a footer
