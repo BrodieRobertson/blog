@@ -7,6 +7,7 @@
     --paper-shadow: 0 6px 6px -4px var(--paper-shadow-color);
     --scale-animate-time: 0.5s;
     --scale-animate-scale: scale(1.05);
+    --expand-animate-time: 0.75s;
     --nav-link-color: white;
     --small-spacing: 1em;
     --med-spacing: 2em;
@@ -82,6 +83,29 @@
     -o-transform: var(--scale-animate-scale);
     -webkit-transform: var(--scale-animate-scale);
     transform: var(--scale-animate-scale);
+}
+
+.expand-marker {
+    transform: scale(0)
+}
+
+@keyframes expand {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/* @keyframes expand {
+    from {transform: translateX(1000px);}
+    to {transform: translateX(0px)}
+} */
+.animate-expand {
+    animation-name: expand;
+    -moz-animation-name: expand;
+    -o-animation-name: expand;
+    -webkit-animation-name: expand;
+    animation-duration: var(--expand-animate-time);
+    -moz-animation-duration: var(--expand-animate-time);
+    -o-animation-duration: var(--expand-animate-time);
+    -webkit-animation-duration: var(--expand-animate-time);
 }
 
 
