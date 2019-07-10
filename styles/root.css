@@ -9,6 +9,7 @@
     --scale-animate-scale: scale(1.05);
     --expand-animate-time: 0.75s;
     --nav-link-color: white;
+    --nav-link-active-color: rgb(202, 202, 202);
     --small-spacing: 1em;
     --med-spacing: 2em;
     --link-color: blue;
@@ -47,11 +48,13 @@
     padding: 2px 6px 2px 6px;
 }
 
-.link:link {
-    text-decoration: none
+.active-nav-button {
+    color: var(--nav-link-active-color);
+    font-weight: bold;
 }
 
-.link:link, .link:visited {
+.link {
+    text-decoration: none;
     color: var(--link-color);
 }
 
