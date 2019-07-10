@@ -39,11 +39,33 @@
 }
 
 .nav-button {
-  font: bold 14px;
-  text-decoration: none;
-  background-color: var(--nav-bg);
-  color: var(--nav-link-color);
-  padding: 2px 6px 2px 6px;
+    font: bold 14px;
+    text-decoration: none;
+    background-color: var(--nav-bg);
+    color: var(--nav-link-color);
+    padding: 2px 6px 2px 6px;
+}
+
+.link:link {
+    text-decoration: none
+}
+
+.link:link, .link:visited {
+    color: var(--link-color);
+}
+
+.clean-list {
+    list-style: none;
+    padding-left: var(--small-spacing);
+}
+
+.nav-bar {
+    display: flex;
+    background-color: var(--nav-bg)
+}
+
+.nav-bar > a {
+    margin: var(--small-spacing);
 }
 
 .animate-scale {
@@ -99,26 +121,3 @@ footer {
     text-align: center;
     flex-shrink: 0;
 }
-
-a:link {
-    text-decoration: none
-}
-
-a:link:not(.nav-button), a:visited:not(.nav-button) {
-    color: var(--link-color);
-}
-
-nav {
-    display: flex;
-    background-color: var(--nav-bg)
-}
-
-nav > a {
-    margin: var(--small-spacing);
-}
-
-aside > div > ul {
-    list-style: none;
-    padding-left: var(--small-spacing);
-}
-
