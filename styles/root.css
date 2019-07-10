@@ -12,7 +12,16 @@
     --nav-link-active-color: rgb(202, 202, 202);
     --small-spacing: 1em;
     --med-spacing: 2em;
+    --border-width: 1px;
     --link-color: blue;
+    --input-color: rgb(95, 95, 95);
+    --success-color: green;
+    --warning-color: rgb(248, 223, 0);
+    --danger-color: red;
+    --success-active-color: rgb(0, 92, 5);
+    --warning-active-color: rgb(211, 191, 8);
+    --danger-active-color: rgb(199, 0, 0);
+
 }
 
 .flex-container {
@@ -53,6 +62,43 @@
     font-weight: bold;
 }
 
+.success-button, .warning-button, .danger-button {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--nav-link-color);
+    padding: 10px 15px;
+    border: var(--border-width);
+    border-style: solid;
+    border-color: var(--paper-border-color);
+    box-shadow: var(--paper-shadow);
+}
+.success-button {
+    background-color: var(--success-color);
+}
+
+.success-button:hover {
+    background-color: var(--success-active-color);
+}
+
+.warning-button {
+    background-color: var(--warning-color);
+}
+
+.warning-button:hover {
+    background-color: var(--warning-active-color);
+}
+
+.danger-button {
+    background-color: var(--danger-color);
+}
+
+.danger-button:hover {
+    background-color: var(--danger-active-color);
+}
+
 .link {
     text-decoration: none;
     color: var(--link-color);
@@ -70,6 +116,21 @@
 
 .nav-bar > a {
     margin: var(--small-spacing);
+}
+
+.text-box {
+    display: block;
+    width: 500px;
+    background: white;
+    color: var(--input-color);
+    font: inherit;
+    box-shadow: var(--paper-shadow);
+    border: var(--border-width);
+    border-style: solid;
+    border-color: var(--paper-border-color);
+    outline: 0;
+    padding: 22px 18px;
+    margin-bottom: 1em;
 }
 
 .animate-scale {
@@ -96,10 +157,7 @@
     from {transform: scale(0)}
     to {transform: scale(1)}
 }
-/* @keyframes expand {
-    from {transform: translateX(1000px);}
-    to {transform: translateX(0px)}
-} */
+
 .animate-expand {
     animation-name: expand;
     -moz-animation-name: expand;
@@ -130,7 +188,7 @@ main, aside, section, article {
     margin-top: 0px;
     border-style: solid;
     border-color: var(--paper-border-color);
-    border-width: 1px;
+    border-width: var(--border-width);
     box-shadow: var(--paper-shadow);
 }
 
