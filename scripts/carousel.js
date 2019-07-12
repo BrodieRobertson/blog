@@ -1,10 +1,11 @@
-var slideIndex = 0;
+var slideIndex = 2;
 
 // Cache the slides and dots
 var slides = document.getElementsByClassName("carousel-slide");
 var dots = document.getElementsByClassName("dot");
 
 showSlides(slideIndex);
+autoCycle(3000);
 
 // Next/previous controls
 function cycleSlides(n) {
@@ -31,4 +32,9 @@ function showSlides(n) {
     }
     slides[slideIndex].style.display = "block"; 
     dots[slideIndex].classList.add("active")
+}
+
+function autoCycle(cycleTime) {
+    cycleSlides(1);
+    setTimeout(() => autoCycle(cycleTime), cycleTime)
 }

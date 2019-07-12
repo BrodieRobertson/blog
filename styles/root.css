@@ -8,6 +8,7 @@
     --scale-animate-time: 0.5s;
     --scale-animate-scale: scale(1.05);
     --expand-animate-time: 0.75s;
+    --fade-animate-time: 1.0s;
     --nav-link-color: white;
     --nav-link-active-color: rgb(202, 202, 202);
     --small-spacing: 1em;
@@ -21,7 +22,6 @@
     --success-active-color: rgb(0, 92, 5);
     --warning-active-color: rgb(211, 191, 8);
     --danger-active-color: rgb(199, 0, 0);
-
 }
 
 .flex-container {
@@ -134,6 +134,8 @@
 }
 
 /* Animations */
+
+/* Scale Animation */
 .animate-scale {
     -moz-transition: var(--scale-animate-time);
     -ms-transition: var(--scale-animate-time);
@@ -150,11 +152,26 @@
     transform: var(--scale-animate-scale);
 }
 
+/* Expand Animation */
 .expand-marker {
     transform: scale(0)
 }
 
 @keyframes expand {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+@-moz-keyframes expand {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@-o-keyframes expand {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@-webkit-keyframes expand {
     from {transform: scale(0)}
     to {transform: scale(1)}
 }
@@ -169,6 +186,39 @@
     -o-animation-duration: var(--expand-animate-time);
     -webkit-animation-duration: var(--expand-animate-time);
 }
+
+/* Fade Animation */
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@-moz-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@-o-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.fade {
+    animation-name: fade;
+    -webkit-animation-name: fade;
+    -moz-animation-name: fade;
+    -o-animation-name: fade;
+    animation-duration: var(--fade-animate-time);
+    -webkit-animation-duration: var(--fade-animate-time);
+    -moz-animation-duration: var(--fade-animate-time);
+    -o-animation-duration: var(--fade-animate-time);
+}
+
 
 .paper {
     background-color: var(--paper-bg);
