@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles/root.css">
+        <link rel="stylesheet" href="styles/index.css">
         <meta charset="UTF-8">
         <title>Brodie's Blog</title>
     </head>
@@ -59,15 +60,15 @@
                             <div class="caption">Caption Three</div>
                         </div>
 
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <a class="prev" onclick="cycleSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="cycleSlides(1)">&#10095;</a>
                     </div>
                     <br>
 
                     <div class="dots-container">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="switchToSlide(0)"></span> 
+                        <span class="dot" onclick="switchToSlide(1)"></span> 
+                        <span class="dot" onclick="switchToSlide(2)"></span> 
                     </div>
                 </section>
 
