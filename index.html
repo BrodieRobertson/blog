@@ -19,26 +19,59 @@
             <h1>Brodie's Blog</h1>
         </header>
 
-        <div class="content flex-container flex-row flex-justify-center">
-            <main class="animate-scale expand-marker">
-                <div>
+        <div class="flex-container flex-row flex-justify-center">
+            <div class="flex-container flex-column">
+                <section class="paper animate-scale expand-marker">
+                    <div>
                     <h2>Welcome</h2>
 
                     My name is Brodie Robertson, I'm known for being:
                     <ul>
                         <li>A 3rd year Software Engineering student at the University of South Australia</li>
                     </ul>
-                </div>
+                    </div>
+                    <div>
+                        <h2>Recent Blog Posts</h2>
+                        <ul>
+                            <li>1 July 2019 - <a class="link" href="blog/post1.html">This is an example</a></li>
+                            <li>1 July 2019 - <a class="link" href="blog/post2.html">This is another example</a></li>
+                        </ul>
+                    </div>
+                </section>
 
-                <div>
-                    <h2>Recent Blog Posts</h2>
-                    <ul>
-                        <li>1 July 2019 - <a class="link" href="blog/post1.html">This is an example</a></li>
-                        <li>1 July 2019 - <a class="link" href="blog/post2.html">This is another example</a></li>
-                    </ul>
-                </div>
+                <section class="paper animate-scale expand-marker">
+                    <div class="carousel">
+                        <div class="carousel-slide fade">
+                            <div class="number">1 / 3</div>
+                            <img src="img1.jpg" class="carousel-image">
+                            <div class="caption">Caption Text</div>
+                        </div>
 
-                <div>
+                        <div class="carousel-slide fade">
+                            <div class="number">2 / 3</div>
+                            <img src="img2.png" class="carousel-image">
+                            <div class="caption">Caption Two</div>
+                        </div>
+
+                        <div class="carousel-slide fade">
+                            <div class="number">3 / 3</div>
+                            <img src="img3.jpg" class="carousel-image">
+                            <div class="caption">Caption Three</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </section>
+
+                <section class="paper animate-scale expand-marker">
                     <h2>Misc</h2>
 
                     <ul>
@@ -46,11 +79,10 @@
                         <li>The <a class="link" href="https://github.com/BrodieRobertson/blog-management-system">shell blog management system</a> that I use to generate my blog posts</li>
                     </ul>
                     <p>I built this blog entirely with static HTML, plain old CSS and pure JavaScript. Why you ask? I don't know I was bored I guess. It's a blog it doesn't need anything fancy, I'll save that for some other projects.</p>
-                </div>
+                </section>
+            </div>
 
-            </main>
-
-            <aside class="animate-scale expand-marker">
+            <aside class="animate-scale expand-marker paper">
                 <h2>Interesting Links</h2>
                 <div>
                     <h3>Content</h3>
@@ -67,6 +99,7 @@
                         <li><a class="link" href="blog/rolling.html">Rolling Blog</a></li>
                         <li><a class="link" href="blog/index.html">Blog Index</a></li>
                         <li><a class="link" href="programs.html">Programs & Tools</a></li>
+                        <li><a class="link" href="about.html">About Me</a></li>
                         <li><a class="link" href="library.html">Library</a></li>
                         <li><a class="link" href="contact.html">Contact Me</a></li>
                     </ul>
